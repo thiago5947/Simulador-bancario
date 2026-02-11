@@ -1,0 +1,45 @@
+import java.util.ArrayList;
+import java.lang.String;
+public class CadastroDeConta {
+
+    private String cpf;
+    private String nomeCompleto;
+    private double rendaMensal;
+    private int tamanho = cpf.length();
+    private int calculoDoPrimeiroDigito;
+    protected int S1;
+    private int calculoDoSegundoDigito;
+    protected int S2;
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getCpf() {
+        if (cpf == null) {
+            System.out.println("Este campo é obrigatorio");
+        } else if (tamanho ==11){
+            System.out.println("CPF valido");
+        }
+        return cpf;
+    }
+
+
+    public void setNomeCompleto(String nomeCompleto) {
+        this.nomeCompleto = nomeCompleto;
+    }
+    public String getNomeCompleto() {
+        return nomeCompleto;
+    }
+
+    public void setRendaMensal(double rendaMensal) {
+        this.rendaMensal = rendaMensal;
+    }
+    public double getRendaMensal() {
+        return rendaMensal;
+    }
+
+
+
+
+}
